@@ -1,0 +1,86 @@
+/* Dark Mode Theme */
+:root {
+  --bg: #121212;
+  --card: #1e1e1e;
+  --text: #eaeaea;
+  --accent: #4f8cff;
+  --accent-hover: #357ae8;
+  --win: #4caf50;
+  --lose: #e53935;
+  --draw: #fdd835;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Poppins", Roboto, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Game buttons */
+button {
+  background: var(--card);
+  border: 2px solid var(--accent);
+  color: var(--text);
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: var(--accent-hover);
+  color: white;
+  transform: scale(1.05);
+}
+
+#start-game {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+}
+
+/* Input */
+#name-input {
+  background: var(--card);
+  border: 2px solid var(--accent);
+  color: var(--text);
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  margin: 1rem;
+  text-align: center;
+}
+
+#name-input::placeholder {
+  color: #999;
+}
+
+/* Results */
+h1 {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+/* Dynamic states (optional classes you can toggle in JS) */
+.win {
+  color: var(--win);
+}
+
+.lose {
+  color: var(--lose);
+}
+
+.draw {
+  color: var(--draw);
+}
